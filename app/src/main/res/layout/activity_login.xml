@@ -7,7 +7,7 @@
     tools:context=".LoginActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/isenLogoLogin"
         android:layout_width="194dp"
         android:layout_height="87dp"
         android:layout_marginTop="40dp"
@@ -15,15 +15,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/login_intro"
         app:srcCompat="@drawable/isen" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/login_intro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="Connexion"
+        android:text="@string/login_intro"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -34,24 +34,24 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/login_field"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="Identifiant"
+        android:text="@string/login_field"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.299"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/isenLogoLogin" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/password_field"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="Mot de passe"
+        android:text="@string/password_field"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.325"
@@ -68,7 +68,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/password_field" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -91,7 +91,7 @@
         android:layout_marginTop="50dp"
         android:background="@color/colorPrimary"
         android:fontFamily="sans-serif"
-        android:text="Valider"
+        android:text="@string/validate_button"
         android:textColor="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -107,5 +107,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/login_field" />
 </androidx.constraintlayout.widget.ConstraintLayout>

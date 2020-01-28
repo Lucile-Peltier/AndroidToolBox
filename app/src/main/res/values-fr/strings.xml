@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidToolBox</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Texte page login -->
+    <string name="login_intro">Connexion</string>
+    <string name="login_field">Identifiant</string>
+    <string name="password_field">Mot de passe</string>
+    <string name="validate_button">Valider</string>
+
+    <!-- Texte page home -->
+    <string name="home_intro">Bonjour, que souhaitez vous faire ?</string>
+    <string name="life_cycle_field">Cycle de vie</string>
+    <string name="save_field">Sauvegarde</string>
+    <string name="permission_field">Permissions</string>
+    <string name="web_services_field">Web Services</string>
+    <string name="logOut_button">Déconnexion</string>
+
+    <!-- Texte page formulaire -->
+    <string name="form_intro">Formulaire</string>
+    <string name="last_name">Votre Nom</string>
+    <string name="first_name">Votre prénom</string>
+    <string name="birthday">Votre Date de Naissance</string>
+    <string name="saveFormButton">Enregistrer</string>
+    <string name="readButton">Lecture</string>
+    <string name="fields_empty">Veuillez remplir tous les champs</string>
+    <string name="user_info">Information Utilisateur</string>
+    <string name="pop_up_button">Retour</string>
+
+    <!-- Texte cycle de vie et fragments -->
+    <string name="activity_state">Etat de l\'activité</string>
+    <string name="first_fragment_field">Je suis le premier fragment</string>
+    <string name="second_fragment_field">Je suis le deuxième fragment</string>
+    <string name="swipe_button">Passer au deuxième</string>
+    <string name="your_age">Votre age</string>
+
+
+</resources>

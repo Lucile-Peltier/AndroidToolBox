@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="Etat de l'activité"
+        android:text="@string/activity_state"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -19,13 +19,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <fragment
-        android:id="@+id/lifeCycleFragment"
-        android:name="fr.isen.peltier.androidtoolbox.LifeCycleFragment"
-        android:layout_width="149dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="50dp"
+        android:id="@+id/blankFragment"
+        android:name="fr.isen.peltier.androidtoolbox.BlankFragment"
+        android:layout_width="410dp"
+        android:layout_height="574dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/activityState" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

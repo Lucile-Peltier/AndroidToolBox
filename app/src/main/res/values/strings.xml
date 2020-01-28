@@ -2,6 +2,37 @@
     <string name="app_name">AndroidToolBox</string>
     <string name="action_settings">Settings</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Texte page login -->
+    <string name="password_field">Password</string>
+    <string name="login_field">Login</string>
+    <string name="login_intro">Connexion</string>
+    <string name="validate_button">Validate</string>
+
+    <!-- Texte page home -->
+    <string name="home_intro">Hello, What do you wish to do ?</string>
+    <string name="life_cycle_field">Life Cycle</string>
+    <string name="web_services_field">Web Services</string>
+    <string name="permission_field">Permissions</string>
+    <string name="save_field">Save</string>
+    <string name="logOut_button">Log Out</string>
+
+    <!-- Texte page formulaire -->
+    <string name="form_intro">Form</string>
+    <string name="birthday">Your Birthday</string>
+    <string name="fields_empty">Please fill up all fields</string>
+    <string name="first_name">Your first name</string>
+    <string name="last_name">Your last name</string>
+    <string name="readButton">Read</string>
+    <string name="saveFormButton">Back Up</string>
+    <string name="user_info">User Information</string>
+    <string name="pop_up_button">Back</string>
+    <string name="your_age">Your age</string>
+
+    <!-- Texte cycle de vie et fragments -->
+    <string name="first_fragment_field">I am the first fragment</string>
+    <string name="second_fragment_field">I am the second fragment</string>
+    <string name="swipe_button">Swipe to second</string>
+    <string name="activity_state">Activity State</string>
+
+    <!-- <string name=""></string> -->
 </resources>

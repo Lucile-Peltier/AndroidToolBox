@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CycleVie"></activity>
-        <activity android:name=".Cycle_Vie" />
+        <activity android:name=".FormActivity"></activity>
+        <activity android:name=".CycleVie" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
