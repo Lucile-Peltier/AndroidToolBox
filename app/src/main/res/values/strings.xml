@@ -34,5 +34,15 @@
     <string name="swipe_button">Swipe to second</string>
     <string name="activity_state">Activity State</string>
 
+    <!-- Texte permissions -->
+    <string name="permissions_intro">Android information</string>
+    <string name="intentChooser_title">Choose your picture library</string>
+    <string name="location_lat">Latitude</string>
+    <string name="location_long">Longitude</string>
+
+    <!-- Texte Web services -->
+    <string name="url_web_service">https://randomuser.me/api/?results=20</string>
+    <string name="list_users">Users</string>
+    <string name="error_text">That didn\'t work!</string>
     <!-- <string name=""></string> -->
 </resources>

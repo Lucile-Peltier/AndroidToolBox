@@ -56,26 +56,26 @@
         app:srcCompat="@android:drawable/stat_notify_sdcard" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/permissionsButton"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="40dp"
         android:background="@color/colorPrimary"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintEnd_toStartOf="@+id/webServicesButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/life_cycle_field"
         app:srcCompat="@android:drawable/stat_sys_speakerphone" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/webServicesButton"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="60dp"
         android:background="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        app:layout_constraintStart_toEndOf="@+id/permissionsButton"
         app:layout_constraintTop_toBottomOf="@+id/saveButton"
         app:srcCompat="@android:drawable/stat_sys_download" />
 
@@ -107,7 +107,7 @@
         app:layout_constraintEnd_toStartOf="@+id/web_services_field"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+        app:layout_constraintTop_toBottomOf="@+id/permissionsButton" />
 
     <TextView
         android:id="@+id/web_services_field"
@@ -117,7 +117,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/permission_field"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+        app:layout_constraintTop_toBottomOf="@+id/webServicesButton" />
 
     <Button
         android:id="@+id/logOutButton"

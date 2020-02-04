@@ -30,6 +30,17 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
             finish() //force la fin de l'activité fermée
         }
+
+        permissionsButton.setOnClickListener {
+            val intent = Intent( this, PermissionActivity::class.java)
+            startActivity(intent)
+        }
+
+        webServicesButton.setOnClickListener {
+            val intent = Intent( this, WebServicesActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     fun goCycle () {
