@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CycleVie">
+    tools:context=".Classes.CycleVie">
 
     <TextView
         android:id="@+id/activityState"
@@ -20,7 +20,7 @@
 
     <fragment
         android:id="@+id/blankFragment"
-        android:name="fr.isen.peltier.androidtoolbox.BlankFragment"
+        android:name="fr.isen.peltier.androidtoolbox.Classes.BlankFragment"
         android:layout_width="410dp"
         android:layout_height="574dp"
         android:layout_marginTop="60dp"

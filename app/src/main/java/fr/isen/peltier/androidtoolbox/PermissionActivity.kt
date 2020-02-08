@@ -12,10 +12,12 @@ import android.location.LocationManager
 import android.os.Bundle
 import android.provider.ContactsContract
 import android.provider.MediaStore
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
+import fr.isen.peltier.androidtoolbox.Model.ContactsAdapter
 import fr.isen.peltier.androidtoolbox.Model.ContactModel
 import kotlinx.android.synthetic.main.activity_permission.*
 
@@ -90,7 +92,7 @@ class PermissionActivity : AppCompatActivity(), LocationListener {
     fun requestPermission(permissionToRequest: String, requestCode: Int, handler: ()-> Unit) {
         if(ContextCompat.checkSelfPermission(this, permissionToRequest) != PackageManager.PERMISSION_GRANTED) {
             if(ActivityCompat.shouldShowRequestPermissionRationale(this, permissionToRequest)) {
-                //display toast
+                Toast.makeText(this,"Changer les permissions",Toast.LENGTH_LONG).show()
             } else {
                 ActivityCompat.requestPermissions(this, arrayOf(permissionToRequest), requestCode)
             }
@@ -104,14 +106,21 @@ class PermissionActivity : AppCompatActivity(), LocationListener {
         permissions: Array<out String>,
         grantResults: IntArray
     ) {
-        if(grantResults.isNotEmpty()) {
-            if (requestCode == PermissionActivity.contactPermissionRequestCode &&
-                grantResults[0] == PackageManager.PERMISSION_GRANTED
-            ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if(requestCode == contactPermissionRequestCode){
+            if(grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED){
                 readContacts()
+            } else {
+                Toast.makeText(this,"Permission refusée sur les contacts",Toast.LENGTH_LONG).show()
             }
         }
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if(requestCode == gpsPermissionRequestCode){
+            if(grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                startGPS()
+            } else {
+                Toast.makeText(this,"Permission refusée sur le GPS",Toast.LENGTH_LONG).show()
+            }
+        }
     }
 
 
@@ -119,7 +128,7 @@ class PermissionActivity : AppCompatActivity(), LocationListener {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == PermissionActivity.pictureRequestCode && resultCode == Activity.RESULT_OK) {
             if (data?.data != null) {
-                galleryButton.setImageURI(data?.data)
+                galleryButton.setImageURI(data.data)
             }
             else {
                 val bitmap = data?.extras?.get("data") as? Bitmap

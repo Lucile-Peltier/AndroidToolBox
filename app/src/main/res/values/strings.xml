@@ -39,10 +39,14 @@
     <string name="intentChooser_title">Choose your picture library</string>
     <string name="location_lat">Latitude</string>
     <string name="location_long">Longitude</string>
+    <string name="location">Location:</string>
 
     <!-- Texte Web services -->
     <string name="url_web_service">https://randomuser.me/api/?results=20</string>
     <string name="list_users">Users</string>
     <string name="error_text">That didn\'t work!</string>
+    <string name="profile_intro">Contact Information:</string>
+    <string name="user_chosen">user_chosen</string>
+
     <!-- <string name=""></string> -->
 </resources>

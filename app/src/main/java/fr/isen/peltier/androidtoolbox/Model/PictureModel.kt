@@ -1,7 +1,7 @@
 package fr.isen.peltier.androidtoolbox.Model
 
-class PictureModel {
+import java.io.Serializable
+
+class PictureModel: Serializable {
     var large: String? = null
-    var medium: String? = null
-    var thumbnail: String? = null
 }

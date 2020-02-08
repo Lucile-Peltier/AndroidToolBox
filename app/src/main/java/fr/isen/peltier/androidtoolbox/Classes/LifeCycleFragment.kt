@@ -1,4 +1,4 @@
-package fr.isen.peltier.androidtoolbox
+package fr.isen.peltier.androidtoolbox.Classes
 
 
 import android.os.Bundle
@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
+import fr.isen.peltier.androidtoolbox.R
 import kotlinx.android.synthetic.main.fragment_life_cycle.*
 
 /**

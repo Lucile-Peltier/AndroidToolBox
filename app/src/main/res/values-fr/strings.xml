@@ -40,10 +40,13 @@
     <string name="intentChooser_title">Choisissez votre gallerie photo</string>
     <string name="location_lat">Latitude</string>
     <string name="location_long">Longitude</string>
+    <string name="location">Position:</string>
 
     <!-- Texte Web services -->
     <string name="list_users">Utilisateurs</string>
     <string name="url_web_service">https://randomuser.me/api/?results=20</string>
     <string name="error_text">Ca n\'a pas marché !</string>
+    <string name="profile_intro">"Informations du contact : "</string>
+    <string name="user_chosen">user_chosen</string>
 
 </resources>

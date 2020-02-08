@@ -1,4 +1,4 @@
-package fr.isen.peltier.androidtoolbox
+package fr.isen.peltier.androidtoolbox.Classes
 
 class Constants {
     companion object {

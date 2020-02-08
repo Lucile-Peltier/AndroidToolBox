@@ -1,10 +1,10 @@
-package fr.isen.peltier.androidtoolbox
+package fr.isen.peltier.androidtoolbox.Model
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import fr.isen.peltier.androidtoolbox.Model.ContactModel
+import fr.isen.peltier.androidtoolbox.R
 import kotlinx.android.synthetic.main.recycle_view_contact_cell.view.*
 
 class ContactsAdapter(val contacts: ArrayList<ContactModel>): RecyclerView.Adapter<ContactsAdapter.ContactViewHolder>() {

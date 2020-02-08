@@ -4,6 +4,8 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import fr.isen.peltier.androidtoolbox.Classes.Constants
+import fr.isen.peltier.androidtoolbox.Classes.CycleVie
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {

@@ -1,9 +1,14 @@
 package fr.isen.peltier.androidtoolbox.Model
 
-class LocationModel {
+import java.io.Serializable
+
+class LocationModel: Serializable {
     var city: String? = null
     var state: String? = null
     var country: String? = null
-    //var postcode: Int? = null
-    var street: String? = null
+    var street: StreetModel? = null
+}
+
+class StreetModel: Serializable {
+    var name: String? = null
 }

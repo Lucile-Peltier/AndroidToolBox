@@ -1,13 +1,14 @@
-package fr.isen.peltier.androidtoolbox
+package fr.isen.peltier.androidtoolbox.Classes
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.FrameLayout
 import android.widget.Toast
+import fr.isen.peltier.androidtoolbox.R
 import kotlinx.android.synthetic.main.activity_cycle_vie.*
 
-class CycleVie : AppCompatActivity(), OnFragmentInteractionListener {
+class CycleVie : AppCompatActivity(),
+    OnFragmentInteractionListener {
 
     val TAG = "State Change"
 
@@ -15,12 +16,14 @@ class CycleVie : AppCompatActivity(), OnFragmentInteractionListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cycle_vie)
         Log.i(TAG, "onCreate")
-        val firstFragment = FirstFragment()
+        val firstFragment =
+            FirstFragment()
         supportFragmentManager.beginTransaction().replace(R.id.blankFragment, firstFragment).commit()
     }
 
     override fun swipeFragment() {
-        val secondFragment = SecondFragment()
+        val secondFragment =
+            SecondFragment()
         supportFragmentManager.beginTransaction().replace(R.id.blankFragment, secondFragment).commit()
     }
 
